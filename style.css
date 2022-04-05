@@ -1,0 +1,54 @@
+/*:root{*/
+/*    --column: column;*/
+/*}*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 40px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+[class^="box-"] {
+    background-color: skyblue;
+
+    /* To place the letter at the center */
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    height: 100px;
+    border: 1px solid springgreen;
+}
+
+.container div{
+    min-width:100px;
+    border: 1px solid orangered;
+}
+/*.container2 {*/
+/*    display: grid;*/
+/*    gap: 20px;*/
+
+/*    grid-template-columns: 200px auto 100px;*/
+/*}*/
+.container2 {
+    display: grid;
+    gap: 20px;
+    height: 100vh;
+
+    grid-template-rows:repeat(3, 1fr);
+    /*grid-template-rows: 200px auto 100px;*/
+}
